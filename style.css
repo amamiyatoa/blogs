@@ -119,78 +119,62 @@ body.fadein_active {
 
     .main {
         margin: 0 auto;
+        max-width: 1400px;
+        min-height: 1000px;
     }
     .content{
-        padding: 50px 3%;
+        padding: 50px 3% 0px 3%;
     }
 
-    .content h2 {
-        margin: 0 auto;
-        margin-top: 50px;
-        padding: 0px 30px;
-        font-size: 35px;
-        width: fit-content;
-        color: #8d8d8d;
-        font-weight: bold;
-        border-left: solid #5c5c5c;
-        border-right: solid #5c5c5c;
-        margin-bottom: 30px;
-    }
-
-    .whiteblock {
-        margin: 0 auto;
-        max-width: 1000px;
-        overflow: hidden;
-        position: relative;
-        background-color: #f3f3f3;
-        border: solid #f3f3f3;
-        border-radius: 30px;
-    }
-    .contents {
+    #contents {
+        display: flex;
         text-align: left;
         color: black;
+        min-height: max-content;
     }
-    .contents dl {
-        height: 140px;
-        overflow: auto;
-        margin: 0 auto;
+    article.backside {
+        border-radius: 15px;
+        width: 950px;
+        min-height: fit-content;
+        background-color: #68e8ff;
+        border: solid 2px;
+        border-radius: 15px;
     }
-    .contents dt {
-        float: left;
-        width: 9em;
-        padding-left: 1.3em;
-    }
-    .contents dd {
-        padding-left: 10em;
-    }
-
-    .profile {
-        color: black;
-    }
-    .profile_pic {
+    div#sidebar_wrapper {
         display: block;
-        width: 600px;
-        height: 600px;
+        width: 350px;
         margin: 0 auto;
-        object-fit: cover;
+        background-color: #f3f3f3;
+        border: solid 2px;
+        border-radius: 15px;
     }
-    .profile p {
+    div#sidebar_wrapper h2.names {
+        display: block;
+        margin: 0 auto;
         text-align: center;
     }
 
-    .activity {
+    section#string_positioning {
+        margin: 15px 0px 25px 20px;
+        width: 95%;
+        height: 25%;
+        border: solid 2px;
+        border-radius: 15px;
+        background-color: #f3f3f3;
+    }
+    div.blog_container {
+        display: block;
+        color: black;
+        padding: 15px 0px 0px 15px;
+    }
+    div#blog_contents a {
+        text-decoration: none;
         color: black;
     }
-    .activity p {
-        text-align: center;
-    }
-
-    .favorite {
-        color: black;
-    }
-    .fav_list {
-        margin: 0 auto;
-        width: fit-content;
+    div#title h1 {
+        margin: 0px;
+        border-bottom: solid 2px;
+        width: 100%;
     }
 
 
