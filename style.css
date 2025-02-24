@@ -327,79 +327,53 @@ body.fadein_active {
     }
 
 
+    .main {
+        margin: 0 auto;
+        -webkit-text-size-adjust: none;
+        padding-bottom: 30px;
+    }
     .content{
-        padding: 20px 3%;
+        padding: 50px 0px 0px 0px;
     }
 
-    .content h2 {
-        margin: 0 auto;
-        margin-top: 50px;
-        padding: 0px 30px;
-        font-size: 25px;
-        width: fit-content;
-        color: #8d8d8d;
-        font-weight: bold;
-        border-left: solid #5c5c5c;
-        border-right: solid #5c5c5c;
-        margin-bottom: 20px;
+    #contents {
+        display: flex;
+        text-align: left;
+        color: black;
+        min-height: max-content;
     }
-
-    .whiteblock {
-        margin: 0 auto;
-        max-width: 350px;
-        overflow: hidden;
-        position: relative;
+    article.backside {
+        border-radius: 15px;
+        width: 100%;
+        min-height: fit-content;
+        background-color: #68e8ff;
+        border: solid 2px;
+        border-radius: 15px;
+    }
+    section#string_positioning {
+        margin: 10px 0px 25px 8px;
+        width: 95%;
+        height: 125px;
+        border: solid 2px;
+        border-radius: 15px;
         background-color: #f3f3f3;
-        border: solid #f3f3f3;
-        border-radius: 30px;
     }
-    .contents {
-        text-align: left;
-        font-size: 13px;
-        color: black;
-    }
-    .contents dl {
-        height: 100px;
-        overflow: auto;
-        margin: 0 auto;
-    }
-    .contents dt {
-        float: left;
-        max-width: 9em;
-        padding-left: 1.3em;
-    }
-    .contents dd {
-        padding-left: 10em;
-    }
-
-    .profile {
-        color: black;
-    }
-    .profile_pic {
+    div.blog_container {
         display: block;
-        width: 300px;
-        height: 300px;
-        margin: 0 auto;
-        object-fit: cover;
+        color: black;
+        padding: 15px 0px 0px 15px;
     }
-    .profile p {
-        text-align: left;
-    }
-
-    .activity {
+    div#blog_contents a {
+        text-decoration: none;
         color: black;
     }
-    .activity p {
-        text-align: left;
+    div#title h1 {
+        margin: 0px;
+        border-bottom: solid 2px;
+        width: 100%;
     }
-
-    .favorite {
-        color: black;
-    }
-    .fav_list {
-        display: block;
-        margin: 0 auto;
-        width: fit-content;
+    div#sidebar_wrapper {
+        display: none;
     }
 
 
