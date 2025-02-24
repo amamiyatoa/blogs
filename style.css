@@ -140,24 +140,10 @@ body.fadein_active {
         border: solid 2px;
         border-radius: 15px;
     }
-    div#sidebar_wrapper {
-        display: block;
-        width: 350px;
-        margin: 0 auto;
-        background-color: #f3f3f3;
-        border: solid 2px;
-        border-radius: 15px;
-    }
-    div#sidebar_wrapper h2.names {
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-    }
-
     section#string_positioning {
         margin: 15px 0px 25px 20px;
         width: 95%;
-        height: 25%;
+        height: 150px;
         border: solid 2px;
         border-radius: 15px;
         background-color: #f3f3f3;
@@ -175,6 +161,36 @@ body.fadein_active {
         margin: 0px;
         border-bottom: solid 2px;
         width: 100%;
+    }
+    div#sidebar_wrapper {
+        display: block;
+        width: 350px;
+        margin: 0 auto;
+        background-color: #f3f3f3;
+        border: solid 2px;
+        border-radius: 15px;
+    }
+    div#sidebar_wrapper h2.names {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0px 0px 30px 0px;
+    }
+    div.sidebar_positioning {
+        padding: 45px 0px 0px 0px;
+    }
+    .sidebar_positioning img {
+        display: block;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        object-fit: cover;
+        border: solid 1px;
+    }
+    section.profile_strings {
+        width: 300px;
+        margin: 0 auto;
+        font-weight: bold;
     }
 
 
