@@ -120,7 +120,7 @@ body.fadein_active {
     .main {
         margin: 0 auto;
         max-width: 1400px;
-        min-height: 1000px;
+        padding-bottom: 40px;
     }
     .content{
         padding: 50px 3% 0px 3%;
