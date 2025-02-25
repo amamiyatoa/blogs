@@ -1,6 +1,7 @@
 body {
     visibility: hidden;
     opacity: 0;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans", Meiryo, sans-serif;
 }
 body.fadein_active {
     visibility: visible;
