@@ -124,84 +124,87 @@ body.fadein_active {
         padding: 50px 3%;
     }
 
-    .content h2 {
+    /*article内部設定*/
+    article.backside {
+        display: flex;
+        max-width: 1400px;
         margin: 0 auto;
-        margin-top: 50px;
-        padding: 0px 30px;
-        font-size: 35px;
-        width: fit-content;
-        color: #8d8d8d;
-        font-weight: bold;
-        border-left: solid #5c5c5c;
-        border-right: solid #5c5c5c;
-        margin-bottom: 30px;
+        color: black;
     }
-
-    .whiteblock {
-        margin: 0 auto;
-        max-width: 1000px;
-        overflow: hidden;
-        position: relative;
+    /*article内ブログのメイン設定*/
+    section#contents_positioning {
+        width: 950px;
+        margin: 0px;
+        padding: 15px 0px 0px 30px;
         background-color: #f3f3f3;
-        border: solid #f3f3f3;
-        border-radius: 30px;
+        border-radius: 15px;
     }
-    .contents {
-        text-align: left;
-        color: black;
+    section#contents_positioning div.blog_contents h1 {
+        font-size: 25px;
+        border-bottom: solid 2px black;
+        width: 95%;
     }
-    .contents dl {
-        height: 140px;
-        overflow: auto;
-        margin: 0 auto;
+    section#contents_positioning div.blog_contents p {
+        font-size: 18px;
+        width: 95%;
     }
-    .contents dt {
-        float: left;
-        width: 9em;
-        padding-left: 1.3em;
+    section#contents_positioning div.blog_contents p span {
+        background: linear-gradient(
+            180deg,
+            transparent 50%,
+            rgba(255,255,0,0.6) 0%
+        );
     }
-    .contents dd {
-        padding-left: 10em;
-    }
-
-    .profile {
-        color: black;
-    }
-    .profile_pic {
+    section#contents_positioning p img {
         display: block;
-        width: 600px;
-        height: 600px;
         margin: 0 auto;
+        height: 400px;
+        padding-top: 10px;
+    }
+    section#contents_positioning div.blog_contents p small {
+        display: block;
+        text-align: center;
+        font-size: 0.6em;
+        padding-top: 10px;
+    }
+
+    /*article内サイドバー設定*/
+    section#sidebar_positioning {
+        width: 400px;
+        margin: 0 0 0 auto;
+        background-color: #f3f3f3;
+        border-radius: 15px;
+        margin-left: 25px;
+    }
+    section#sidebar_positioning div.names {
+        text-align: center;
+        margin: 0 auto;
+    }
+    section#sidebar_positioning a img:not(.sns_links) {
+        display: block;
+        width: 300px;
+        height: 300px;
         object-fit: cover;
-    }
-    .profile p {
-        text-align: center;
-    }
-
-    .activity {
-        color: black;
-    }
-    .activity p {
-        text-align: center;
-    }
-
-    .favorite {
-        color: black;
-    }
-    .fav_list {
         margin: 0 auto;
-        width: fit-content;
+        align-items: center;
     }
-
-
-
-    .comingsoon {
-        color: black;
-    }
-    .comingsoon p {
+    section#sidebar_positioning p {
         margin: 0 auto;
-        text-align: center;
+        width: 300px;
     }
+    div#sns_links {
+        display: flex;
+        text-align: center;
+        margin: 0 auto;
+        height: fit-content;
+        justify-content: center;
+    }
+    div#sns_links img {
+        margin: 0 auto;
+        width: 50px;
+        height: 50px;
+    }
+
 
     footer {
         text-align: center;
@@ -326,91 +329,60 @@ body.fadein_active {
         transition: 0.35s ease-in-out;
     }
 
-
+    .main {
+        margin: 0 auto;
+        max-width: 480px;
+    }
     .content{
         padding: 20px 3%;
     }
 
-    .content h2 {
+    /*article内部設定*/
+    article.backside {
+        display: flex;
         margin: 0 auto;
-        margin-top: 50px;
-        padding: 0px 30px;
-        font-size: 25px;
-        width: fit-content;
-        color: #8d8d8d;
-        font-weight: bold;
-        border-left: solid #5c5c5c;
-        border-right: solid #5c5c5c;
-        margin-bottom: 20px;
+        color: black;
     }
-
-    .whiteblock {
-        margin: 0 auto;
-        max-width: 350px;
-        overflow: hidden;
-        position: relative;
+    /*article内ブログの設定*/
+    section#contents_positioning {
+        margin: 0px;
+        padding: 15px 0px 0px 30px;
         background-color: #f3f3f3;
-        border: solid #f3f3f3;
-        border-radius: 30px;
+        border-radius: 15px;
     }
-    .contents {
-        text-align: left;
-        font-size: 13px;
-        color: black;
+    section#contents_positioning div.blog_contents h1 {
+        font-size: 25px;
+        border-bottom: solid 2px black;
+        width: 95%;
     }
-    .contents dl {
-        height: 100px;
-        overflow: auto;
-        margin: 0 auto;
+    section#contents_positioning div.blog_contents p {
+        font-size: 18px;
+        width: 95%;
     }
-    .contents dt {
-        float: left;
-        max-width: 9em;
-        padding-left: 1.3em;
+    section#contents_positioning div.blog_contents p span {
+        background: linear-gradient(
+            180deg,
+            transparent 50%,
+            rgba(255,255,0,0.6) 0%
+        );
     }
-    .contents dd {
-        padding-left: 10em;
-    }
-
-    .profile {
-        color: black;
-    }
-    .profile_pic {
-        display: block;
-        width: 300px;
-        height: 300px;
-        margin: 0 auto;
-        object-fit: cover;
-    }
-    .profile p {
-        text-align: left;
-    }
-
-    .activity {
-        color: black;
-    }
-    .activity p {
-        text-align: left;
-    }
-
-    .favorite {
-        color: black;
-    }
-    .fav_list {
+    section#contents_positioning p img {
         display: block;
         margin: 0 auto;
-        width: fit-content;
+        height: 400px;
+        padding-top: 10px;
     }
-
-
-
-    .comingsoon {
-        color: black;
-    }
-    .comingsoon p {
-        margin: 0 auto;
+    section#contents_positioning div.blog_contents p small {
+        display: block;
         text-align: center;
+        font-size: 0.6em;
+        padding-top: 10px;
     }
+
+    section#sidebar_positioning {
+        display: none;
+    }
+
 
     footer {
         text-align: center;
