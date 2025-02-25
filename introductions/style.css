@@ -345,18 +345,19 @@ body.fadein_active {
     }
     /*article内ブログの設定*/
     section#contents_positioning {
+        width: 400px;
         margin: 0px;
-        padding: 15px 0px 0px 30px;
+        padding: 15px 0px 0px 10px;
         background-color: #f3f3f3;
         border-radius: 15px;
     }
     section#contents_positioning div.blog_contents h1 {
-        font-size: 25px;
+        font-size: 20px;
         border-bottom: solid 2px black;
         width: 95%;
     }
     section#contents_positioning div.blog_contents p {
-        font-size: 18px;
+        font-size: 13px;
         width: 95%;
     }
     section#contents_positioning div.blog_contents p span {
@@ -369,7 +370,7 @@ body.fadein_active {
     section#contents_positioning p img {
         display: block;
         margin: 0 auto;
-        height: 400px;
+        height: 200px;
         padding-top: 10px;
     }
     section#contents_positioning div.blog_contents p small {
