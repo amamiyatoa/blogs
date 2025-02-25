@@ -149,7 +149,7 @@ body.fadein_active {
         font-size: 18px;
         width: 95%;
     }
-    section#contents_positioning div.blog_contents p span {
+    section#contents_positioning div.blog_contents p span.underline {
         background: linear-gradient(
             180deg,
             transparent 50%,
@@ -205,6 +205,9 @@ body.fadein_active {
         margin: 0 auto;
         width: 50px;
         height: 50px;
+    }
+    span.wsl {
+        font-weight: bold;
     }
 
 
@@ -362,7 +365,7 @@ body.fadein_active {
         font-size: 13px;
         width: 95%;
     }
-    section#contents_positioning div.blog_contents p span {
+    section#contents_positioning div.blog_contents p span.underline {
         background: linear-gradient(
             180deg,
             transparent 50%,
@@ -384,6 +387,9 @@ body.fadein_active {
 
     section#sidebar_positioning {
         display: none;
+    }
+    span.wsl {
+        font-weight: bold;
     }
 
 
