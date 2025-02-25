@@ -17,7 +17,7 @@ window.onload = function() {
     document.getElementById('github_link').onclick = () => {
         let github_link = window.confirm('ページを移動してもよろしいですか？');
         if(github_link) {
-            window.open('https://github.com/amamiyatoa/amamiyatoa.github.io','_blank');
+            window.open('https://github.com/amamiyatoa/blogs/introductions','_blank');
         }
     }
 }
