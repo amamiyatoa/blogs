@@ -173,6 +173,7 @@ body.fadein_active {
     /*article内サイドバー設定*/
     section#sidebar_positioning {
         width: 400px;
+        height: fit-content;
         margin: 0 0 0 auto;
         background-color: #f3f3f3;
         border-radius: 15px;
@@ -200,11 +201,14 @@ body.fadein_active {
         margin: 0 auto;
         height: fit-content;
         justify-content: center;
+        padding: 15px;
     }
     div#sns_links img {
         margin: 0 auto;
-        width: 50px;
-        height: 50px;
+        width: 35psx;
+        height: 35px;
+        padding: 5px;
+        border: solid 1px;
     }
     span.wsl {
         font-weight: bold;
