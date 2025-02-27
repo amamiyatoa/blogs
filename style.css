@@ -187,6 +187,21 @@ body.fadein_active {
         object-fit: cover;
         border: solid 1px;
     }
+    div#sns_links {
+        display: flex;
+        text-align: center;
+        margin: 0 auto;
+        height: fit-content;
+        justify-content: center;
+        padding: 15px;
+    }
+    div#sns_links img {
+        margin: 0 auto;
+        width: 35px;
+        height: 35px;
+        padding: 5px;
+        border: solid 1px;
+    }
     section.profile_strings {
         width: 300px;
         margin: 0 auto;
