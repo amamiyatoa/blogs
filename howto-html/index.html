@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!--ヘッド格納場所-->
+<head>
+    <!--文字エンコード設定-->
+    <meta charset="UTF-8">
+    <!--viewportの指定-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--cssとjsの読み込み宣言-->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <!--favicon読み込み宣言-->
+    <link rel="shortcut icon" href="./files/favicon.png" type="image/x-icon">
+    <!--ページ説明欄-->
+    <meta name="description" content="雨宮とあという名前でVRChatをしている一般人です。いろいろなことして人生楽しむためにHTML・CSS等プログラミングの勉強をしています。">
+    <meta name="keywords" content="雨宮とあ, あまみやとあ, 雨宮, ">
+    <!--サイトマップの宣言-->
+    <link rel="altarnate" type="application/rss+xml" title="sitemap" href="./sitemap.xml" />
+    <!--ページタイトルの宣言-->
+    <title>HTMLの使い方メモ．その１ | 雨宮とあ</title>
+</head>
+<body style="margin: 0px;">
+
+    <div class="container" style="color: white;">
+        <!--======================ヘッダー=====================-->
+        <div class="top">
+
+            <div class="header_wrap">
+                <div class="header_position">
+                    <a href="index.html"><img src="./files/logo.png" alt="雨宮とあ" class="icon"></a>
+                    <svg class="github_left" id="github_link" height="85" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="85" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
+                        <path d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z"></path>
+                    </svg>
+                </div>
+                <div id="menu_wrap">
+                    <div class="menubar">
+                        <ul id="menu">
+                            <li><a href="https://amamiyatoa.github.io/index.html" target="_blank">ホーム</a></li>
+                            <li><a href="#">ソーシャル</a>
+                                <ul id="menubox">
+                                    <li><a href="https://x.com/amamiyatoa" target="_blank">Twitter</a></li>
+                                    <li><a href="https://vrchat.com/home/user/usr_b606eaaf-84b5-4ac7-94b4-49fb134805ad" target="_blank">VRChat</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../index.html" id="y">Blogs</a></li>
+                            <li><a href="#">干芋</a>
+                                <ul id="menubox">
+                                    <li><a href="https://www.amazon.co.jp/hz/wishlist/ls/2G1MOJFDJEIDC?ref_=list_d_wl_lfu_nav_2" target="_blank">Amazon</a></li>
+                                    <li><a href="https://booth.pm/wish_list_names/82bT1oR0?_gl=1*g0geyd*_ga*NDI4NjAyOTQ2LjE3MjA5NTY1MzY.*_ga_RWT2QKJLDC*MTc0MDU4MTY0Ni4zLjEuMTc0MDU4MTcwOC41OS4wLjA." target="_blank">Booth</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--======================本文=====================-->
+
+        <div class="main">
+
+            <div class="content">
+                <div id="contents">
+                    <article class="backside">
+                        <section id="contents_positioning">
+                            <div class="blog_contents">
+                                <!--ここからブログ本文-->
+                                <!--下記は各HTML Tagについての説明-->
+                                <!--h1=見出し--><!--p=文章--><!--br=文章の改行--><!--p内にimg=アスペクト比16:9が望ましい-->
+                                <!--p内にsmall=imgの説明-->
+                                <h1>はじめに</h1>     <!--見出し-->
+                                <p>                  <!--本文-->
+                                    どうもみなさんこんにちは。<br>
+                                    こんな感じにブログを書くのは数年ぶりですね。<br>
+                                    数年ぶりのブログで数年ぶりにHTMLのメモを残したいと思います。<br>
+                                    誰かの薬に立つことができたらとても嬉しいです。
+                                </p>
+                                <h1>What's "HTML"？</h1>
+                                <p>
+                                    HTMLとは、HTML(HyperText Markup Language)という略であり、ハイパーテキストを云々...<br>
+                                    まぁざっくりいうとウェブサイトの基盤です、このサイトみたいに文字を表示したり画像を出したりする基盤です。<br>
+                                    このHTMLがないとウェブサイトは成り立ちません。(例外はありますが基本的にHTMLがないとウェブサイトはできません。)<br>
+                                    じゃあどうやってHTMLをやるんだい！！ってことで次の章で詳しく解説していきます。
+                                </p>
+                                <h1>HTMLの簡単な書き方について</h1>
+                                <p>
+                                    HTMLについてざっくりと解説したので、この章では"HTMLの書き方"について解説していきたいと思います。<br>
+                                    私自身あまり詳しいとは言えないので結構あやふやな部分があるんですけど、まぁ私自身のメモ程度に見てください...<br>
+                                    <br>
+                                    HTMLを書く方法はすーっごく簡単です。<br>
+                                    index.htmlファイルを作成→タグを書く→ウェブで表示<br>
+                                    これだけの簡単なステップで書くことができます、そこら辺のプログラミング言語よりデバッグも簡単！<br>
+                                    まぁ...CSS(Cascading Style Sheets)とかいうのを使い始めるとなかなか苦戦します...<br>
+                                    今はHTMLの解説なので省きますけどね、いずれ解説するはず...<br>
+                                    <br>
+                                    ではまずhtmlファイルの作成を行います。<br>
+                                    私の開発環境はVS Code(Visual Studio Code)にて行います。コーディングは大抵VS Codeで行っているので環境を合わせたい人は各々インストールしてくださいね。<br>
+                                    VS Codeを開いたら右上のファイルマークを押してエクスプローラーを開きます。(画像参照)<br>
+                                    <a href="./files/vscode_explorer.png" target="_blank"><img src="./files/vscode_explorer.png" alt="エクスプローラーを表示"></a><br>
+                                    エクスプローラーを表示できたら"フォルダーを開く"をクリックして、任意の場所のフォルダを選択して開きましょう。<br>
+                                    すると画像のようになると思います。
+                                    <a href="./files/vscode_open_explorer.png"><img src="./files/vscode_open_explorer.png" alt="フォルダを開いたvscode"></a><br>
+                                    そしてフォルダ名の場所にマウスを持っていくと色々出てくると思うので、ファイルマークをクリックして新規ファイルを作成してください。<br>
+                                    ファイル名は"index.html"にしましょう、まぁ公開したりしないよって人は何でもいいと思います。<br>
+                                    "index.html"を作成できたらここからはタグについての解説をしていきますよ！！<br>
+                                    下準備は終わったのでもうほぼ終わったも同然ですね。
+                                </p>
+                                <h1>HTMLのタグについて</h1>
+                                <p>
+                                    HTMLは数多のタグを使いこなしてなんぼっていう感じのものになります。<br>
+                                    最初は簡単な「Hello, World!!」を表示させてみたいと思います。<br>
+                                    Hello, World!!の出力自体はとてもシンプルです。<br>
+                                    <a href="./files/helloworld.png" target="_blank"><img src="./files/helloworld.png" alt="ハローワールド"></a>
+                                    画像のように"Hello, World!!"と入力するだけでも出力はされます。<br>
+                                    だがしか～し！！そんなことを知ったところでって感じなのでもっと細かく書きましょう。<br>
+                                    最初は必ずhtmlタグで囲います。<br>
+                                    <a href="./files/html_tag.png"><img src="./files/html_tag.png" alt="htmlタグで囲む"></a><br>
+                                    その後にheadタグを追加しましょう。headタグを追加することにより今後出す予定のCSSっていうものが使えるようになったりします。絶対入れましょう。<br>
+                                    <a href="./files/head_tag.png"><img src="./files/head_tag.png" alt="headタグで囲む"></a><br>
+                                    headタグの下にbodyタグを追加しましょう。bodyタグを追加することで本格的なhtml文章の作成が始まります。<br>
+                                    <a href="./files/body_tag.png"><img src="./files/body_tag.png" alt="bodyタグで囲む"></a><br>
+                                    以上で基本的なhtmlの構造を記述することができました。簡単にまとめると、HTMLを始めるならまずhtmlタグを書く→中にheadタグとbodyタグを書く。<br>
+                                    という順番で記述しましょう！！<br>
+                                    以上htmlでの基本的な記述でした。次の章ではheadタグについて書いていきます。
+                                </p>
+                                <h1>headタグについて</h1>
+                                <p>
+                                    headタグとは、簡単に言ってしまえばサブコンテンツ的なものです。タブのタイトルだったりCSSファイルの指定だったりショートカットアイコンだったり...etc<br>
+                                    JavaScriptを記述したファイルをhtmlに読み込ませたりcssを記述したファイルをhtmlに読み込ませるならheadタグ内に書くのが一般的です。(ただしJavaScriptに関してはbodyタグ内に書く記事もありますが私個人の好みとしてはheadタグ内に書いたほうが見やすいので良いと思います。)<br>
+                                    headタグの用途は主に、先程の記述した通り<span class="enphasis">CSSの読み込み</span>と<span class="enphasis">JavaScriptの読み込み</span>に加え、タイトル名の変更やサイト説明など本文以外の機能を使うための場所になります。<br>
+                                    その記述方法について解説していきます。
+                                </p>
+                                <h1>headタグの書き方を知ろうの会</h1>
+                                <p>
+                                    headタグの書き方は至って単純です。headタグで囲まれた場所にmetaタグやlinkタグやその他タグを記述するだけです。<br>
+                                    使用可能タグは以下に...<br>
+                                    <ul>
+                                        1,
+                                    </ul>
+                                </p>
+                            </div>
+                        </section>
+
+                        <!--サイドバー-->
+                        <!--基本的にここは触らなくてよい-->
+                        <!--/////-->
+                        <!--変更時はすべてのサイトに適応させるように注意-->
+                        <!--/////-->
+                        <!--レスポンシブ化によりスマホ端末では非表示-->
+                        <section id="sidebar_positioning">
+                            <div class="names">
+                                <h2>雨宮とあ</h2>
+                            </div>
+                            <a href="https://vrchat.com/home/user/usr_b606eaaf-84b5-4ac7-94b4-49fb134805ad" target="_blank"><img src="files/profile_pic.png" alt="雨宮とあ"></a>
+                            <p>プロジェクトから逃げる一般高校生。
+                                <br>最近はVRChatと音ゲーをやってる。
+                                <br>HTMLでのサイトコーディングをまともにやったのがこのサイト...らしい。
+                                <br>Minecraftのアドオン作りもやってたけどバージョンアップしてから分からなくなって諦めた。
+                            </p>
+                            <div id="sns_links">
+                                <a href="https://x.com/amamiyatoa">
+                                    <img src="files/x_logo.png" alt="X Link" class="sns_links">
+                                </a>
+                                <a href="https://annict.com/@amamiyatoa/watched"><img src="https://annict.com//images/favicon.png" alt="Annict Link" class="sns_links"></a>
+
+                            </div>
+                        </section>
+                    </article>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <small>Copyright© 雨宮とあ All Right Reserved
+                <br>Designed By 雨宮とあ
+            </small>
+        </footer>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,417 @@
+body {
+    visibility: hidden;
+    opacity: 0;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans", Meiryo, sans-serif;
+}
+body.fadein_active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1.2s ease-in-out;
+}
+
+@media screen and (min-width : 1024px) {
+    
+    body {
+        background-color: white;
+        -webkit-text-size-adjust: none;
+    }
+
+    /*/////*/
+    /*ヘッダー要素の設定*/
+    /*/////*/
+    .top {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    .header_wrap {
+        display: block;
+        border-bottom: solid #555;
+        margin: 0 auto;
+    }
+    .header_position {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        color: black;
+        position: relative;
+    }
+    .icon {
+        width: 200px;
+        padding: 15px 0px 0px 15px ;
+    }
+    .github_left {
+        display: inline;
+        margin: 0 0 0 auto;
+    }
+
+    /*/////*/
+    /*メニューバーの設定*/
+    /*/////*/
+    /*メニューバー背景*/
+    #menu_wrap {
+        display: block;
+        background-color: #68e8ff;
+    }
+    /*各メニューの設定*/
+    ul#menu {
+        margin: 0 auto;
+        padding: 0px 0px 0px 0px;
+        background-color: #68e8ff;
+        display: flex;
+        justify-content: center;
+    }
+    /*各メニューのサイズとリスト形式の非表示*/
+    ul#menu li {
+        width: 175px;
+        display: inline-block;
+        list-style-type: none;
+        position: relative;
+    }
+    /*文字色と大文字とリンク形式の非表示*/
+    ul#menu a {
+        background-color: #68e8ff;
+        color: black;
+        line-height: 50px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        display: block;
+        border: solid #68e8ff;
+    }
+    /*メニューにマウスカーソルを合わせたときのカラー変更(id="y"が付与されている物を除く)*/
+    /*aタグにid="y"が付いている物にボーダーとradiusの追加*/
+    li a#y {
+        border: solid rgba(0, 0, 255, 0);
+        border-radius: 50px;
+        background-color: rgba(0, 0, 255, 0.5);
+        color: white;
+    }
+    ul#menu ul {
+        visibility: hidden;
+        opacity: 0;
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        background-color: #68e8ff;
+    }
+
+
+    ul#menu.fadein_first li a:hover {
+        background-color: rgba(0, 0, 255, 0.5);
+        border: solid rgba(0, 0, 255, 0);;
+        border-radius: 50px;
+        color: white;
+        transition: background-color 0.35s ease-in-out;
+    }
+
+    ul#menu.fadein_active li a:hover {
+        background-color: rgba(0, 0, 255, 0.5);
+        border: solid rgba(0, 0, 255, 0);;
+        border-radius: 50px;
+        color: white;
+        transition: background-color 0.35s ease-in-out;
+    }
+    ul#menu.fadein_active li:hover ul {
+        visibility: visible;
+        opacity: 1;
+        transition: 0.35s ease-in-out;
+    }
+
+
+    .main {
+        margin: 0 auto;
+    }
+    .content{
+        padding: 50px 3%;
+    }
+
+    /*article内部設定*/
+    article.backside {
+        display: flex;
+        max-width: 1400px;
+        margin: 0 auto;
+        color: black;
+    }
+    /*article内ブログのメイン設定*/
+    section#contents_positioning {
+        width: 950px;
+        height: fit-content;
+        margin: 0px;
+        padding: 15px 0px 0px 30px;
+        background-color: #f3f3f3;
+        border-radius: 15px;
+    }
+    .blog_contents .blog_container_main {
+        border: solid;
+    }
+    /*div(blog_contents)内の見出し(h1)設定*/
+    section#contents_positioning div.blog_contents h1 {
+        font-size: 25px;
+        border-bottom: solid 2px black;
+        width: 95%;
+    }
+    /*div(blog_contents)内の本文(p)設定*/
+    section#contents_positioning div.blog_contents p {
+        font-size: 18px;
+        width: 95%;
+    }
+    /*div(blog_contents)内の本文(p)で使っているspan(underline)設定*/
+    section#contents_positioning div.blog_contents p span.underline {
+        background: linear-gradient(
+            180deg,
+            transparent 50%,
+            rgba(255,255,0,0.6) 0%
+        );
+        font-weight: bold;
+    }
+    /*section(contents_positioning,div(blog_contents)でも可能)内の本文に使うimg設定*/
+    section#contents_positioning p img {
+        display: block;
+        margin: 0 auto;
+        height: 400px;
+        padding-top: 10px;
+    }
+    /*div(blog_contents)内の本文(p)に入っているsmall(補足説明)設定*/
+    section#contents_positioning div.blog_contents p small {
+        display: block;
+        text-align: center;
+        font-size: 0.6em;
+        padding-top: 10px;
+    }
+
+    /*article内サイドバー設定*/
+    section#sidebar_positioning {
+        width: 400px;
+        height: fit-content;
+        margin: 0 0 0 auto;
+        background-color: #f3f3f3;
+        border-radius: 15px;
+        margin-left: 25px;
+    }
+    section#sidebar_positioning div.names {
+        text-align: center;
+        margin: 0 auto;
+    }
+    section#sidebar_positioning a img:not(.sns_links) {
+        display: block;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        margin: 0 auto;
+        align-items: center;
+    }
+    section#sidebar_positioning p {
+        margin: 0 auto;
+        width: 300px;
+    }
+    div#sns_links {
+        display: flex;
+        text-align: center;
+        margin: 0 auto;
+        height: fit-content;
+        justify-content: center;
+        padding: 15px;
+    }
+    div#sns_links img {
+        margin: 0 auto;
+        width: 50px;
+        height: 50px;
+    }
+    span.wsl {
+        font-weight: bold;
+    }
+    span.enphasis {
+        font-weight: bold;
+    }
+
+
+    footer {
+        text-align: center;
+        color: black;
+        margin: 0 auto;
+    }
+
+}
+
+/*レスポンシブ化(phone)*/
+@media screen and (max-width:480px) {
+    
+    body {
+        background-color: white;
+        -webkit-text-size-adjust: none;
+    }
+
+    /*/////*/
+    /*ヘッダー要素の設定*/
+    /*/////*/
+    .top {
+        max-width: 480px;
+        margin: 0 auto;
+    }
+    .header_wrap {
+        display: block;
+        border-bottom: solid #555;
+        margin: 0 auto;
+    }
+    .header_position {
+        display: flex;
+        margin: 0 auto;
+        color: black;
+        position: relative;
+        align-items: center;
+    }
+    .icon {
+        width: 150px;
+        padding: 10px 0px 0px 10px;
+    }
+    .github_left {
+        display: inline;
+        margin: 0 0 0 auto;
+    }
+
+    /*/////*/
+    /*メニューバーの設定*/
+    /*/////*/
+    /*メニューバー背景*/
+    #menu_wrap {
+        display: block;
+        background-color: #68e8ff;
+    }
+    /*各メニューの設定*/
+    ul#menu {
+        margin: 0 auto;
+        padding: 0px 0px 0px 0px;
+        background-color: #68e8ff;
+        display: flex;
+        justify-content: center;
+    }
+    /*各メニューのサイズとリスト形式の非表示*/
+    ul#menu li {
+        width: 100px;
+        display: inline-block;
+        list-style-type: none;
+        position: relative;
+    }
+    /*文字色と大文字とリンク形式の非表示*/
+    ul#menu a {
+        background-color: #68e8ff;
+        color: black;
+        line-height: 30px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        display: block;
+        border: solid #68e8ff;
+    }
+    /*メニューにマウスカーソルを合わせたときのカラー変更(class="y"が付与されている物を除く)*/
+    ul#menu a:hover:not(#y) {
+        border: solid rgba(0, 0, 255, 0);;
+        border-radius: 50px;
+        background-color: rgba(0, 0, 255, 0.5);
+        color: white;
+    }
+    /*aタグにclass="y"が付いている物にボーダーとradiusの追加*/
+    li a#y {
+        border: solid rgba(0, 0, 255, 0);
+        border-radius: 50px;
+        background-color: rgba(0, 0, 255, 0.5);
+        color: white;
+    }
+    ul#menu ul {
+        visibility: hidden;
+        opacity: 0;
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        background-color: #68e8ff;
+    }
+
+
+    ul#menu.fadein_first li a:hover {
+        background-color: rgba(0, 0, 255, 0.5);
+        border: solid rgba(0, 0, 255, 0);;
+        border-radius: 50px;
+        color: white;
+        transition: background-color 0.35s ease-in-out;
+    }
+
+    ul#menu.fadein_active li a:hover {
+        background-color: rgba(0, 0, 255, 0.5);
+        border: solid rgba(0, 0, 255, 0);;
+        border-radius: 50px;
+        color: white;
+        transition: background-color 0.35s ease-in-out;
+    }
+    ul#menu.fadein_active li:hover ul {
+        visibility: visible;
+        opacity: 1;
+        transition: 0.35s ease-in-out;
+    }
+
+    .main {
+        margin: 0 auto;
+        max-width: 480px;
+    }
+    .content{
+        padding: 20px 3%;
+    }
+
+    /*article内部設定*/
+    article.backside {
+        display: flex;
+        margin: 0 auto;
+        color: black;
+    }
+    /*article内ブログの設定*/
+    section#contents_positioning {
+        width: 100%;
+        margin: 0px;
+        padding: 15px 0px 0px 10px;
+        background-color: #f3f3f3;
+        border-radius: 15px;
+    }
+    section#contents_positioning div.blog_contents h1 {
+        font-size: 20px;
+        border-bottom: solid 2px black;
+        width: 95%;
+    }
+    section#contents_positioning div.blog_contents p {
+        font-size: 13px;
+        width: 95%;
+    }
+    section#contents_positioning div.blog_contents p span.underline {
+        background: linear-gradient(
+            180deg,
+            transparent 50%,
+            rgba(255,255,0,0.6) 0%
+        );
+    }
+    section#contents_positioning p img {
+        display: block;
+        margin: 0 auto;
+        height: 200px;
+        padding-top: 10px;
+    }
+    section#contents_positioning div.blog_contents p small {
+        display: block;
+        text-align: center;
+        font-size: 0.6em;
+        padding-top: 10px;
+    }
+    span.wsl {
+        font-weight: bold;
+    }
+
+    section#sidebar_positioning {
+        display: none;
+    }
+
+
+    footer {
+        text-align: center;
+        color: black;
+        margin: 0 auto;
+        font-size: 10px;
+    }
+
+}
