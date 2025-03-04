@@ -405,6 +405,9 @@ body.fadein_active {
     span.wsl {
         font-weight: bold;
     }
+    span.enphasis {
+        font-weight: bold;
+    }
 
     section#sidebar_positioning {
         display: none;
