@@ -8,6 +8,9 @@ body.fadein_active {
     opacity: 1;
     transition: 1.2s ease-in-out;
 }
+* {
+    box-sizing: border-box;
+}
 
 @media screen and (min-width : 1024px) {
     
@@ -149,6 +152,7 @@ body.fadein_active {
         font-size: 25px;
         border-bottom: solid 2px black;
         width: 95%;
+        padding-left: 15px;
     }
     /*div(blog_contents)内の本文(p)設定*/
     section#contents_positioning div.blog_contents p {

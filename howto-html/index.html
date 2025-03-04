@@ -69,76 +69,108 @@
                                 <!--下記は各HTML Tagについての説明-->
                                 <!--h1=見出し--><!--p=文章--><!--br=文章の改行--><!--p内にimg=アスペクト比16:9が望ましい-->
                                 <!--p内にsmall=imgの説明-->
-                                <h1>はじめに</h1>     <!--見出し-->
-                                <p>                  <!--本文-->
-                                    どうもみなさんこんにちは。<br>
-                                    こんな感じにブログを書くのは数年ぶりですね。<br>
-                                    数年ぶりのブログで数年ぶりにHTMLのメモを残したいと思います。<br>
-                                    誰かの薬に立つことができたらとても嬉しいです。
-                                </p>
-                                <h1>What's "HTML"？</h1>
-                                <p>
-                                    HTMLとは、HTML(HyperText Markup Language)という略であり、ハイパーテキストを云々...<br>
-                                    まぁざっくりいうとウェブサイトの基盤です、このサイトみたいに文字を表示したり画像を出したりする基盤です。<br>
-                                    このHTMLがないとウェブサイトは成り立ちません。(例外はありますが基本的にHTMLがないとウェブサイトはできません。)<br>
-                                    じゃあどうやってHTMLをやるんだい！！ってことで次の章で詳しく解説していきます。
-                                </p>
-                                <h1>HTMLの簡単な書き方について</h1>
-                                <p>
-                                    HTMLについてざっくりと解説したので、この章では"HTMLの書き方"について解説していきたいと思います。<br>
-                                    私自身あまり詳しいとは言えないので結構あやふやな部分があるんですけど、まぁ私自身のメモ程度に見てください...<br>
-                                    <br>
-                                    HTMLを書く方法はすーっごく簡単です。<br>
-                                    index.htmlファイルを作成→タグを書く→ウェブで表示<br>
-                                    これだけの簡単なステップで書くことができます、そこら辺のプログラミング言語よりデバッグも簡単！<br>
-                                    まぁ...CSS(Cascading Style Sheets)とかいうのを使い始めるとなかなか苦戦します...<br>
-                                    今はHTMLの解説なので省きますけどね、いずれ解説するはず...<br>
-                                    <br>
-                                    ではまずhtmlファイルの作成を行います。<br>
-                                    私の開発環境はVS Code(Visual Studio Code)にて行います。コーディングは大抵VS Codeで行っているので環境を合わせたい人は各々インストールしてくださいね。<br>
-                                    VS Codeを開いたら右上のファイルマークを押してエクスプローラーを開きます。(画像参照)<br>
-                                    <a href="./files/vscode_explorer.png" target="_blank"><img src="./files/vscode_explorer.png" alt="エクスプローラーを表示"></a><br>
-                                    エクスプローラーを表示できたら"フォルダーを開く"をクリックして、任意の場所のフォルダを選択して開きましょう。<br>
-                                    すると画像のようになると思います。
-                                    <a href="./files/vscode_open_explorer.png"><img src="./files/vscode_open_explorer.png" alt="フォルダを開いたvscode"></a><br>
-                                    そしてフォルダ名の場所にマウスを持っていくと色々出てくると思うので、ファイルマークをクリックして新規ファイルを作成してください。<br>
-                                    ファイル名は"index.html"にしましょう、まぁ公開したりしないよって人は何でもいいと思います。<br>
-                                    "index.html"を作成できたらここからはタグについての解説をしていきますよ！！<br>
-                                    下準備は終わったのでもうほぼ終わったも同然ですね。
-                                </p>
-                                <h1>HTMLのタグについて</h1>
-                                <p>
-                                    HTMLは数多のタグを使いこなしてなんぼっていう感じのものになります。<br>
-                                    最初は簡単な「Hello, World!!」を表示させてみたいと思います。<br>
-                                    Hello, World!!の出力自体はとてもシンプルです。<br>
-                                    <a href="./files/helloworld.png" target="_blank"><img src="./files/helloworld.png" alt="ハローワールド"></a>
-                                    画像のように"Hello, World!!"と入力するだけでも出力はされます。<br>
-                                    だがしか～し！！そんなことを知ったところでって感じなのでもっと細かく書きましょう。<br>
-                                    最初は必ずhtmlタグで囲います。<br>
-                                    <a href="./files/html_tag.png"><img src="./files/html_tag.png" alt="htmlタグで囲む"></a><br>
-                                    その後にheadタグを追加しましょう。headタグを追加することにより今後出す予定のCSSっていうものが使えるようになったりします。絶対入れましょう。<br>
-                                    <a href="./files/head_tag.png"><img src="./files/head_tag.png" alt="headタグで囲む"></a><br>
-                                    headタグの下にbodyタグを追加しましょう。bodyタグを追加することで本格的なhtml文章の作成が始まります。<br>
-                                    <a href="./files/body_tag.png"><img src="./files/body_tag.png" alt="bodyタグで囲む"></a><br>
-                                    以上で基本的なhtmlの構造を記述することができました。簡単にまとめると、HTMLを始めるならまずhtmlタグを書く→中にheadタグとbodyタグを書く。<br>
-                                    という順番で記述しましょう！！<br>
-                                    以上htmlでの基本的な記述でした。次の章ではheadタグについて書いていきます。
-                                </p>
-                                <h1>headタグについて</h1>
-                                <p>
-                                    headタグとは、簡単に言ってしまえばサブコンテンツ的なものです。タブのタイトルだったりCSSファイルの指定だったりショートカットアイコンだったり...etc<br>
-                                    JavaScriptを記述したファイルをhtmlに読み込ませたりcssを記述したファイルをhtmlに読み込ませるならheadタグ内に書くのが一般的です。(ただしJavaScriptに関してはbodyタグ内に書く記事もありますが私個人の好みとしてはheadタグ内に書いたほうが見やすいので良いと思います。)<br>
-                                    headタグの用途は主に、先程の記述した通り<span class="enphasis">CSSの読み込み</span>と<span class="enphasis">JavaScriptの読み込み</span>に加え、タイトル名の変更やサイト説明など本文以外の機能を使うための場所になります。<br>
-                                    その記述方法について解説していきます。
-                                </p>
-                                <h1>headタグの書き方を知ろうの会</h1>
-                                <p>
-                                    headタグの書き方は至って単純です。headタグで囲まれた場所にmetaタグやlinkタグやその他タグを記述するだけです。<br>
-                                    使用可能タグは以下に...<br>
-                                    <ul>
-                                        1,
-                                    </ul>
-                                </p>
+                                <section class="blog_box">
+                                    <h1>はじめに</h1>     <!--見出し-->
+                                    <p>                  <!--本文-->
+                                        どうもみなさんこんにちは。<br>
+                                        こんな感じにブログを書くのは超絶久々なんですが継続できるように頑張ります。ということで、数年ぶりのブログで数年ぶりにHTMLのメモを残したいと思います。<br>
+                                        誰かの薬に立つことができたらとても嬉しいです。
+                                    </p>
+                                </section>
+                                <section class="blog_box">
+                                    <h1>What's "HTML"？</h1>
+                                    <p>
+                                        HTMLとは、HTML(HyperText Markup Language)という略であり、ハイパーテキストを云々...<br>
+                                        まぁざっくりいうとウェブサイトの基盤です、このサイトみたいに文字を表示したり画像を出したりする基盤です。<br>
+                                        このHTMLがないとウェブサイトは成り立ちません。(例外はありますが基本的にHTMLがないとウェブサイトはできません。)<br>
+                                        じゃあどうやってHTMLをやるんだい！！ってことで次の章で詳しく解説していきます。
+                                    </p>
+                                </section>
+                                <section class="blog_box">
+                                    <h1>HTMLの簡単な書き方について</h1>
+                                    <p>
+                                        HTMLについてざっくりと解説したので、この章では"HTMLの書き方"について解説していきたいと思います。<br>
+                                        私自身あまり詳しいとは言えないので結構あやふやな部分があるんですけど、まぁ私自身のメモ程度に見てください...<br>
+                                        <br>
+                                        HTMLを書く方法はすーっごく簡単です。<br>
+                                        index.htmlファイルを作成→タグを書く→ウェブで表示<br>
+                                        これだけの簡単なステップで書くことができます、そこら辺のプログラミング言語よりデバッグも簡単！<br>
+                                        まぁ...CSS(Cascading Style Sheets)とかいうのを使い始めるとなかなか苦戦します...<br>
+                                        今はHTMLの解説なので省きますけどね、いずれ解説するはず...<br>
+                                        <br>
+                                        ではまずhtmlファイルの作成を行います。<br>
+                                        私の開発環境はVS Code(Visual Studio Code)にて行います。コーディングは大抵VS Codeで行っているので環境を合わせたい人は各々インストールしてくださいね。<br>
+                                        VS Codeを開いたら右上のファイルマークを押してエクスプローラーを開きます。(画像参照)<br>
+                                        <a href="./files/vscode_explorer.png" target="_blank"><img src="./files/vscode_explorer.png" alt="エクスプローラーを表示"></a><br>
+                                        エクスプローラーを表示できたら"フォルダーを開く"をクリックして、任意の場所のフォルダを選択して開きましょう。<br>
+                                        すると画像のようになると思います。
+                                        <a href="./files/vscode_open_explorer.png"><img src="./files/vscode_open_explorer.png" alt="フォルダを開いたvscode"></a><br>
+                                        そしてフォルダ名の場所にマウスを持っていくと色々出てくると思うので、ファイルマークをクリックして新規ファイルを作成してください。<br>
+                                        ファイル名は"index.html"にしましょう、まぁ公開したりしないよって人は何でもいいと思います。<br>
+                                        "index.html"を作成できたらここからはタグについての解説をしていきますよ！！<br>
+                                        下準備は終わったのでもうほぼ終わったも同然ですね。
+                                    </p>
+                                </section>
+                                <section class="blog_box">
+                                    <h1>HTMLのタグについて</h1>
+                                    <p>
+                                        HTMLは数多のタグを使いこなしてなんぼっていう感じのものになります。<br>
+                                        最初は簡単な「Hello, World!!」を表示させてみたいと思います。<br>
+                                        Hello, World!!の出力自体はとてもシンプルです。<br>
+                                        <a href="./files/helloworld.png" target="_blank"><img src="./files/helloworld.png" alt="ハローワールド"></a>
+                                        画像のように"Hello, World!!"と入力するだけでも出力はされます。<br>
+                                        だがしか～し！！そんなことを知ったところでって感じなのでもっと細かく書きましょう。<br>
+                                        最初は必ずhtmlタグで囲います。<br>
+                                        <a href="./files/html_tag.png" target="_blank"><img src="./files/html_tag.png" alt="htmlタグで囲む"></a><br>
+                                        その後にheadタグを追加しましょう。headタグを追加することにより今後出す予定のCSSっていうものが使えるようになったりします。絶対入れましょう。<br>
+                                        <a href="./files/head_tag.png" target="_blank"><img src="./files/head_tag.png" alt="headタグで囲む"></a><br>
+                                        headタグの下にbodyタグを追加しましょう。bodyタグを追加することで本格的なhtml文章の作成が始まります。<br>
+                                        <a href="./files/body_tag.png" target="_blank"><img src="./files/body_tag.png" alt="bodyタグで囲む"></a><br>
+                                        以上で基本的なhtmlの構造を記述することができました。簡単にまとめると、HTMLを始めるならまずhtmlタグを書く→中にheadタグとbodyタグを書く。<br>
+                                        という順番で記述しましょう！！<br>
+                                        以上htmlでの基本的な記述でした。次の章ではheadタグについて書いていきます。
+                                    </p>
+                                </section>
+                                <section class="blog_box">
+                                    <h1>headタグについて</h1>
+                                    <p>
+                                        headタグとは、簡単に言ってしまえばサブコンテンツ的なものです。タブのタイトルだったりCSSファイルの指定だったりショートカットアイコンだったり...etc<br>
+                                        JavaScriptを記述したファイルをhtmlに読み込ませたりcssを記述したファイルをhtmlに読み込ませるならheadタグ内に書くのが一般的です。(ただしJavaScriptに関してはbodyタグ内に書く記事もありますが私個人の好みとしてはheadタグ内に書いたほうが見やすいので良いと思います。)<br>
+                                        headタグの用途は主に、先程の記述した通り<span class="enphasis">CSSの読み込み</span>と<span class="enphasis">JavaScriptの読み込み</span>に加え、タイトル名の変更やサイト説明など本文以外の機能を使うための場所になります。<br>
+                                        その記述方法について解説していきます。
+                                    </p>
+                                </section>
+                                <section class="blog_box">
+                                    <h1>headタグの書き方を知ろうの会</h1>
+                                    <p>
+                                        headタグの書き方は至って単純です。headタグで囲まれた場所にmetaタグやlinkタグやその他タグを記述するだけです。<br>
+                                        使用可能タグは以下に...
+                                        </p>
+                                        <ul>
+                                            1,&lt;meta&gt;<br>
+                                            2,&lt;link&gt;<br>
+                                            3,&lt;title&gt;<br>
+                                            4,&lt;script&gt;<br>
+                                            5,&lt;style&gt;
+                                        </ul>
+                                        <p>
+                                        以上5点+属性各種でhead内を構成します。metaタグ・linkタグ・titleタグは必ずと言っていいほど使うので覚えておきましょう。使わないウェブサイトは多分実験的なウェブサイトか個人的に楽しんでいるものだとおもいます、わかりませんけどね...<br><br>
+                                        じゃあそのタグの書き方は？ってことで今から紹介しましょう。私もあまりmetaタグは知らないのでこれを期に覚えたいと思います。紹介する順番はリスト通りに進行していきます。<br>
+                                        metaタグの書き方は画像の通り<br>
+                                        <a href="./files/meta_tag.png" target="_blank"><img src="./files/meta_tag.png" alt="bodyタグで囲む"></a><br>
+                                        metaタグは囲うものではなくそれ単体で機能するタグなので終了タグは不要。metaタグ内に属性を入れることで機能するタグです。<br><br>
+                                        <span class="enphasis">1．&lt;meta charset="UTF-8"&gt;</span><br>
+                                        このタグはhtml内で日本語を使う上で必要な文字エンコードを宣言するmetaタグです。これを使うことで文字化けを防ぐことができます。まぁ入れない状態で作っても文字化けしたことないんですけど一応入れておきましょう、無くて困るよりは全然いいのでね。<br><br>
+                                        <span class="enphasis">2．&lt;link rel="stylesheet" href="cssのパス"&gt;</span><br>
+                                        このタグはhtmlで適応させるcssを指定するlinkタグです。これはcssを外部ファイルとして保存している場合に使います。基本的にhtml上より外部ファイルとしてcssを付けたほうが見やすい＋修正もしやすいのでおすすめです。それとこのタグもmetaタグと同じで終了タグは不要。<br><br>
+                                        <span class="enphasis">3．&lt;title&gt;タイトル名&lt;/title&gt;</span><br>
+                                        このタグはGoogle検索などの検索結果に出てくるタイトルやページタブの名前に使われます。デフォルト(titleタグが無い場合)では、このhtmlファイルの名前として表示されます。好きな名前で公開したい場合は必ずこのタグを使いましょう。<br><br>
+                                        <span class="enphasis">4．&lt;script src="javascriptのパス"&gt;</span><br>
+                                        このタグは外部ファイルに保存したJavaScriptを読み込むために使います。&lt;head&gt;内に書くか&lt;body&gt;&内に書くかで色々記事が別れているんですけど個人的には&lt;head&gt;に書いたほうが見やすいと思います。あくまで個人的な意見ですけど、機能的には何も問題は無いはずなので...<br><br>
+                                        <span class="enphasis">5.&lt;style&gt;&lt;/style&gt;</span><br>
+                                        3番で紹介した外部ファイルからcssを読み込むタグを使わない場合はこのタグを使ってスタイルを付けます。私個人はあまり使ってないんですけどね...(PCで見ている人はF12を押してソースコードを見てくれるとわかりますがhtml上でstyleを使っている部分はほんの少ししかないです。)<br>
+                                    </p>
+                                </section>
                             </div>
                         </section>
 
